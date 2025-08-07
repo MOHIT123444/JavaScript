@@ -32,7 +32,9 @@ console.log(Date.now());
 console.log(`Today is ${MyDate.getDay()}`);
 
 
-
+NewDate.toLocaleString('default', {
+    weekday : "long",
+})
 
 
 

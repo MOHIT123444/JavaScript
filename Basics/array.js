@@ -75,7 +75,7 @@
 
 
 
-let number =  [0,1,2,3,4];
+// let number =  [0,1,2,3,4];
 // let heroes = ["Shaktiman", "Krish", "Krishna", "Hanuman"];
 // console.log(`here is the number =>  ${number[1]} and one hero is  ${heroes[1]}`);
 
@@ -102,19 +102,26 @@ let number =  [0,1,2,3,4];
 // console.log(typeof newarr);
 
 
-const ArrN = [0,1,2,3,4,5,6]; // Original array
-console.log("A", ArrN); 
+// const ArrN = [0,1,2,3,4,5,6]; // Original array
+// console.log("A", ArrN); 
 
-const ArrN1 = ArrN.slice(1,3); // Applied slice method on arr and in input slice method not includes last range
-console.log("B", ArrN1);
+// const ArrN1 = ArrN.slice(1,3); // Applied slice method on arr and in input slice method not includes last range
+// console.log("B", ArrN1);
 
-console.log("A", ArrN); // No impact on original array after applying slice method (Shallow copy)
+// console.log("A", ArrN); // No impact on original array after applying slice method (Shallow copy)
 
-const ArrN2 = ArrN.splice(1,3); // Cut the portion and also include last range as well and update original array.
-console.log("C", ArrN2);
+// const ArrN2 = ArrN.splice(1,3); // Cut the portion and also include last range as well and update original array.
+// console.log("C", ArrN2);
 
-console.log("A", ArrN); // Original array got updates as splice portion is removed from original arr (Deep copy)
+// console.log("A", ArrN); // Original array got updates as splice portion is removed from original arr (Deep copy)
 
+// console.log();
+
+
+const Marvel_Heroes = ['Spiderman', 'Ironman','Captain America','Antman'];
+const DC_Heroes = ['Batman', 'Supermman','Flash','Wolvoriene'];
+const All_herores = [...Marvel_Heroes,...DC_Heroes];
+console.log(All_herores);
 
 
 
